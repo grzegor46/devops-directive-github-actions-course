@@ -1,0 +1,13 @@
+name: My first workflow
+
+on:
+  workflow_call:
+    
+
+jobs:
+  say-hello-on-my-first-workflow:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: |
+          echo 'hello from first my gha workflow'
+          echo "$RANDOM"
