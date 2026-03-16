@@ -1,7 +1,10 @@
 name: My first workflow
 
 on:
-  workflow_call:
+  workflow_dispatch:
+  push:
+    branches:
+      - develop
     
 
 jobs:
